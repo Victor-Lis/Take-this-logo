@@ -178,8 +178,12 @@ const uploadImage = async () => {
 
 }
 
-function start() {
+async function start() {
 
+    min = 3
+    sec = 0
+    localStorage.setItem("min", min)
+    localStorage.setItem("sec", sec)
     document.querySelector("#intro").style.display = "none"
     document.querySelector("#content").style.display = "flex"
 
@@ -218,8 +222,8 @@ function updateTimeSub(){
     if(sec <= 0 && min <= 0){
 
         alert("Fim de tempo!!")
-        localStorage.setItem("min", min)
-        localStorage.setItem("sec", sec)
+        localStorage.setItem("min", 3)
+        localStorage.setItem("sec", 0)
         return `00:00`
 
     }
