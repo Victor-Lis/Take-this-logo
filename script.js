@@ -58,7 +58,6 @@ if(firstTime == "false"){
 
 const uploadImage = async () => {
 
-    console.log(document.querySelector("#image").value)
     if (document.querySelector("#image").files[0]) {
         const formData = new FormData();
         formData.append("image", document.querySelector("#image").files[0]);
