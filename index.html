@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predictions</title>
+
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js" defer></script>
+
+</head>
+<body>
+
+    <h1 id="timer"> </h1>
+
+    <main class="content-box" id="intro" style="display: flex;">
+
+        <h2 style="color: #fff; font-weight: bold; margin-bottom: 2px;"> Bem vindo<strong style="color: #3EBDFF">!</strong> </h2>
+        <h4> Ao apertar o botão abaixo o jogo começará e você terá 5 minutos para encontrar as 5 logos necessárias. Se você conseguir, você ganha! </h4>
+        <button class="input-button" onclick="start()">Começar!</button>
+
+    </main>
+
+    <main class="content-box" id="content" style="display: none;">
+
+        <h2 style="color: #fff; font-weight: bold;" id="title"></h2>
+        <h2 style="color: #fff; font-weight: bold;" id="placar"> <strong style="color: #3EBDFF">1</strong>/5 </h2>
+        <div class="input-box" style="margin-top: 10%;" id="form">
+
+            <input class='input-url' style="background-color: #fff; margin: 05px 0" type="file" id="image">
+            <img src="" id="img" style="width: 100%; border-radius: 10px; margin: 05px 0;">
+            <button class="input-button" onclick="uploadImage()">Testar</button>
+
+        </div>
+
+    </main>
+
+</body>
+</html>

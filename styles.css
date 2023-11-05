@@ -1,0 +1,141 @@
+*{
+
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    font-family: sans-serif;
+
+}
+
+#timer{
+
+    color: #3EBDFF;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+}
+
+body{
+
+    width: 100%;
+    min-height: 100vh;
+    background-color: #363636;
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.content-box{
+
+    width: calc(70% - 60px);
+    min-width: 250px;
+    max-width: 350px;
+    /* margin: 2% 25%; */
+    min-height: 225px;
+    max-height: 80vh;
+    background-color: #262626;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px 0px #000;
+    border-radius: 20px;
+    padding: 10px 5px;
+    overflow-y: auto;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+
+    > h4{
+
+        margin: 7.5% 0;
+        width: 70%;
+        text-align: center;
+        color: #fff;
+
+    }
+
+    > .input-button{
+
+        padding: 5px 10px;
+        color: #fff;
+        font-size: 18.5px;
+
+    }
+
+}
+
+.input-box{
+
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+
+}
+
+.input-title{
+
+    color: #fff;
+    margin: 5.5px 0;
+
+}
+
+.input-url{
+
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #3EBDFF;
+
+    &:hover{
+
+        cursor: pointer;
+
+    }
+
+}
+
+.input-button{
+
+    background-color: #3EBDFF;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: 0.25s;
+
+    &:hover{
+
+        cursor: pointer;
+        transition: 0.6s;
+        opacity: 0.8;
+
+    }
+
+}
+
+.card{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    color: #fff;
+    background-color: #363636;
+    border-radius: 10px;
+    margin: 10px 5px;
+    box-shadow: 0px 0px 2.5px 0px #fff;
+
+}
+
+.input-url:invalid{
+
+    color: red;
+
+}
