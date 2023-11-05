@@ -1,5 +1,5 @@
 const input = document.querySelector("#url")
-const url = `https://api.imgur.com/3/image`;
+const url = `*****`;
 const urlCustomVisionAI = `*****`
 const apiKey = "*****";
 const title = document.querySelector("#title")
