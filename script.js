@@ -1,7 +1,7 @@
 const input = document.querySelector("#url")
-const url = `https://api.imgur.com/3/image`;
-const urlCustomVisionAI = `https://eastus2.api.cognitive.microsoft.com/customvision/v3.0/Prediction/ad37fe4e-a6a3-4deb-898a-807623b82a24/detect/iterations/Iteration1/url`
-const apiKey = "2df1400f224783a";
+const url = `*****`;
+const urlCustomVisionAI = `*****`
+const apiKey = "*****";
 const title = document.querySelector("#title")
 const placar = document.querySelector("#placar")
 const penDrive = "D:"
@@ -101,7 +101,7 @@ const uploadImage = async () => {
 
                         method: "POST",
                         headers: {
-                            "Prediction-Key": "79ff41780cc84ae6a2d01ad67167c4e5",
+                            "Prediction-Key": "*****",
                             "Content-Type": "application/json",
                         },
                         body: JSON.stringify({
